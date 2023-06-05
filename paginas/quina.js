@@ -2,13 +2,19 @@ document.querySelector("#soterar-quina").addEventListener("click",() => {
     const listaNumeros = []
     while (listaNumeros.length < 5) {
        let numero =  parseInt(Math.random()*80)
-       if (numero !== 0 && !listaNumeros.includes(numero)) {
-        if(numero<10) {
-            listaNumeros.push(`0${numero}`)
-        }else {
-            listaNumeros.push(numero)
+       if (numero !== 0) {
+        console.log(listaNumeros)
+        console.log(numero)
+        console.log(listaNumeros.includes(numero))
+      if (listaNumeros.includes(numero)) {
+      } else {
+        if (numero < 10) {
+          listaNumeros.push(`0${numero}`);
+        } else {
+          listaNumeros.push(numero);
         }
-       }
+      }
+    }
     }
     document.querySelector("#quina").innerText = ""
     listaNumeros.sort()

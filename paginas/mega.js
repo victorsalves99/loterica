@@ -2,13 +2,19 @@ document.querySelector("#soterar-Mega").addEventListener("click",() => {
     const listaNumeros = []
     while (listaNumeros.length < 6) {
        let numero =  parseInt(Math.random()*60)
-       if (numero !== 0 && !listaNumeros.includes(numero)) {
-        if(numero<10) {
-            listaNumeros.push(`0${numero}`)
-        }else {
-            listaNumeros.push(numero)
+       if (numero !== 0) {
+        console.log(listaNumeros)
+        console.log(numero)
+        console.log(listaNumeros.includes(numero))
+      if (listaNumeros.includes(numero)) {
+      } else {
+        if (numero < 10) {
+          listaNumeros.push(`0${numero}`);
+        } else {
+          listaNumeros.push(numero);
         }
-       }
+      }
+    }
     }
     document.querySelector("#mega").innerText = ""
     listaNumeros.sort()
