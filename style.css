@@ -49,18 +49,24 @@
     font-weight: bold;
     font-size: 30px;
     background-color: #019F45;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     border-radius: 50%;
     color: white;
+    text-align: center;
 
 }
 .sorteado-quina {
     font-weight: bold;
     font-size: 30px;
     background-color: #45308F;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     border-radius: 50%;
     color: white;
+    text-align: center;
 
 }
 .sorteado-lotofacil {
@@ -68,8 +74,11 @@
     font-size: 30px;
     background-color: #C2318F;
     padding: 10px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     color: white;
+    text-align: center;
 
 }
 .img-secao {
